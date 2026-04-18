@@ -1,18 +1,17 @@
 const { sum, multiply, divide, calculateTotalToPay } = require('./02-math');
 
 describe('Test for math', () => {
-
   describe('sum', () => {
     test('adds 1 + 2 to equal 3', () => {
       expect(sum(1, 2)).toBe(3);
     });
-  })
+  });
 
   describe('multiply', () => {
     test('multiplying 2 * 2 to equal 4', () => {
       expect(multiply(2, 2)).toBe(4);
     });
-  })
+  });
 
   describe('divide', () => {
     test('should divide', () => {
@@ -30,8 +29,7 @@ describe('Test for math', () => {
 
       expect(divide(5, 2)).toBe(2.5);
     });
-
-  })
+  });
 
   describe('calculte total to pay', () => {
     test('Calculate total to pay', () => {
@@ -41,12 +39,5 @@ describe('Test for math', () => {
 
       expect(calculateTotalToPay(100, 100)).toBe(0);
     });
-  })
-})
-
-
-
-
-
-
-
+  });
+});
