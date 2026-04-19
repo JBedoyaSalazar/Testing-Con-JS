@@ -10,6 +10,6 @@
       "*": ["node_modules/*"]
     }
   },
-  "include": ["src/**/*", "src/**/*.test.js", "e2e/**/*.e2e.js"],
+  "include": ["src/**/*", "src/**/*.test.js", "e2e/**/*.js"],
   "exclude": ["node_modules"]
 }
