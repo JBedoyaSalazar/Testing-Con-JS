@@ -28,9 +28,15 @@ describe('Books Endpoint', () => {
   });
 
   afterAll(async () => {
-    await dataBase.collection(BOOKS_COLLECTION).deleteMany({});
-    await client.close();
-    await new Promise((resolve) => server.close(resolve));
+    if (dataBase) {
+      await dataBase.collection(BOOKS_COLLECTION).deleteMany({});
+    }
+    if (client) {
+      await client.close();
+    }
+    if (server) {
+      await new Promise((resolve) => server.close(resolve));
+    }
   });
 
   beforeEach(async () => {
